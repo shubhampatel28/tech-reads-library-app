@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tech Reads</string>
+    <string name="info">Information</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="compnayname">TECH READS</string>
+    <string name="version">2020.10.29</string>
+    <string name="mobile">+1 (699) 123-456</string>
+    <string name="creator">© Created by Shubham Patel</string>
+</resources>
