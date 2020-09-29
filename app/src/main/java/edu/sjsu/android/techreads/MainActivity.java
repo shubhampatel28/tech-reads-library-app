@@ -35,11 +35,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.info_menu:
                 Intent intent = new Intent(this, Information.class);
                 startActivity(intent);
+                return true;
 
             case R.id.uninstall_menu:
                 Uri packageURI = Uri.parse("package:edu.sjsu.android.techreads");
                 Intent intentUninstall = new Intent(Intent.ACTION_DELETE, packageURI);
                 startActivity(intentUninstall);
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("description", booksList.get(position).getBookDesc());
                 intent.putExtra("image", booksList.get(position).getBookImage());
                 intent.putExtra("rating", booksList.get(position).getNumStars());
-                if (position == booksList.size()-1) {
+                if (position == booksList.size() - 1) {
                     builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("This is a book that might make you paranoid. Do you still want to proceed?")
                             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
