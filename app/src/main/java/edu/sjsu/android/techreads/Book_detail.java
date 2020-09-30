@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toolbar;
 
 
-public class Book_detail extends AppCompatActivity {
+public class Book_detail extends MainActivity {
 
 
     @Override

@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Information extends AppCompatActivity {
+public class Information extends MainActivity {
     String mobileNumber, location;
 
     @Override
