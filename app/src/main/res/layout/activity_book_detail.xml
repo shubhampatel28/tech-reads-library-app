@@ -1,76 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Book_detail">
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 
-    <ImageView
-        android:id="@+id/book_imageView"
-        android:layout_width="match_parent"
-        android:layout_height="267dp"
-        android:paddingTop="5dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/bookTitle_textView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:text="Book Title"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        tools:context=".Book_detail">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="16dp"
-        android:background="#EFE5E5" />
+        <ImageView
+            android:id="@+id/book_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:contentDescription="@string/bookImageView"
+            android:paddingTop="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/synopsis_TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="26dp"
-        android:text="SYNOPSIS"
-        android:textColor="#673AB7"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bookTitle_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text = "Book Title" />
 
-    <TextView
-        android:id="@+id/content_textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="16dp"
-        android:text="Content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:background="#EFE5E5" />
 
-    <TextView
-        android:id="@+id/ratings_TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingTop="42dp"
-        android:text="RATINGS"
-        android:textColor="#673AB7"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/synopsis_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="26dp"
+            android:paddingEnd="16dp"
+            android:text="@string/synopsis_textView"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:paddingStart="16dp"
-        android:paddingTop="16dp"
-        android:rating="5"
-        android:stepSize="0.5" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/content_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            tools:text = "Content Area"/>
+
+        <TextView
+            android:id="@+id/ratings_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="42dp"
+            android:paddingEnd="16dp"
+            android:text="@string/ratings_textView"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:rating="5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+</ScrollView>

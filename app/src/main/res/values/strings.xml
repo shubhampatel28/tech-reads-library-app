@@ -4,6 +4,11 @@
     <string name="uninstall">Uninstall</string>
     <string name="compnayname">TECH READS</string>
     <string name="version">2020.10.29</string>
-    <string name="mobile">+1 (699) 123-456</string>
+    <string name="mobile">+1 (699) 123-4569</string>
     <string name="creator">© Created by Shubham Patel</string>
+    <string name="operatingHours">Monday - Friday \n10 a.m. - 9 p.m. \n\nSaturday - Sunday \n10 a.m. - 3 p.m.</string>
+    <string name="address">211 S 9th St \nSan Jose, CA 95112</string>
+    <string name="bookImageView">Image of a Book</string>
+    <string name="synopsis_textView">SYNOPSIS</string>
+    <string name="ratings_textView">RATINGS</string>
 </resources>
